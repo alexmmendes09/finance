@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  finance:
+    image: ${DOCKER_REGISTRY}finance
+    build:
+      context: .
+      dockerfile: Finance\Dockerfile
